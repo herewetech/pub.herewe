@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package account.svc.herewe;
+option go_package="./proto;proto";
+
+service Account {
+    rpc Create(CreateAccountRequest) returns (CreateAccountResponse) {}
+}
+
+message CreateAccountRequest {
+    string username = 1;
+    string password = 2;
+}
+message CreateAccountResponse {
+    string id = 1;
+}
