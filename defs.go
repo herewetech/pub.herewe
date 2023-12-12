@@ -20,7 +20,7 @@ const (
 
 // Services
 const (
-	AccountSvcName = "account.svc.herewe"
+	AccountSvcName = "account::svc::herewe"
 )
 
 /*
